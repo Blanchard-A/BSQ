@@ -5,14 +5,17 @@
 ## Login   <blanch_p@epitech.net>
 ## 
 ## Started on  Sun Dec  6 16:56:26 2015 Alexandre Blanchard
-## Last update Wed Dec  9 16:11:04 2015 Alexandre Blanchard
+## Last update Wed Dec 16 14:13:01 2015 Alexandre Blanchard
 ##
 
 NAME1		=	bsq
 
-SRC1		=	test.c \
-			test2.c \
-			test3.c
+SRC1		=	main.c \
+			check.c \
+			change.c \
+			count.c \
+			tab.c \
+			replace.c \
 
 
 OBJ1		=	$(SRC1:.c=.o)
