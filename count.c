@@ -5,7 +5,7 @@
 ** Login   <blanch_p@epitech.net>
 ** 
 ** Started on  Wed Dec 16 11:12:41 2015 Alexandre Blanchard
-** Last update Wed Dec 16 14:16:38 2015 Alexandre Blanchard
+** Last update Fri Dec 18 14:37:12 2015 Alexandre Blanchard
 */
 
 #include <stdlib.h>
@@ -13,22 +13,22 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-int	nb_ligne(char *file, int i, int y)
-{
-  char	buffer[4096];
-  int	fd;
+/* int	nb_lgne(char *file, int i, int y) */
+/* { */
+/*   char	buffer[4096]; */
+/*   int	fd; */
 
-  fd = open(file, O_RDONLY);
-  read(fd, buffer, 4096);
-  while (buffer[i] != 0)
-    {
-      if (buffer[i] == '\n')
-	y++;
-      i++;
-    }
-  close(fd);
-  return (y);
-}
+/*   fd = open(file, O_RDONLY); */
+/*   read(fd, buffer, 4096); */
+/*   while (buffer[i] != 0) */
+/*     { */
+/*       if (buffer[i] == '\n') */
+/* 	y++; */
+/*       i++; */
+/*     } */
+/*   close(fd); */
+/*   return (y); */
+/* } */
 
 int	nb_colonne(char *file, int i, int y)
 {
@@ -50,3 +50,28 @@ int	nb_colonne(char *file, int i, int y)
   return (y);
 }
 
+int	nb_ligne(char *file)
+{
+  char	buffer[4096];
+  int	fd;
+  char	*nb;
+  int	i;
+  int	find;
+
+  i = 0;
+  fd = open(file, O_RDONLY);
+  read(fd, buffer, 4096);
+  while (buffer[i] != '\n')
+    {
+      i++;
+    }
+  nb = malloc(sizeof(char) * i);
+  i = 0;
+  while (buffer[i] != '\n')
+    {
+      nb[i] = buffer[i];
+      i++;
+    }
+  find = my_getnbr(nb) + 1;
+  return (find);
+}

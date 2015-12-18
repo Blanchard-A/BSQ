@@ -5,7 +5,7 @@
 ** Login   <blanch_p@epitech.net>
 ** 
 ** Started on  Wed Dec 16 13:38:19 2015 Alexandre Blanchard
-** Last update Wed Dec 16 14:16:10 2015 Alexandre Blanchard
+** Last update Fri Dec 18 15:17:07 2015 Alexandre Blanchard
 */
 
 #include <stdlib.h>
@@ -22,7 +22,7 @@ int	check_bigger(char **tab, char **av, int nb_col)
   big = 0;
   x = 0;
   y = 0;
-  while (tab[y] != NULL)
+  while (tab[y + 1] != NULL)
     {
       x = 0;
       while (x < nb_col)

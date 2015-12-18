@@ -5,7 +5,7 @@
 ## Login   <blanch_p@epitech.net>
 ## 
 ## Started on  Wed Nov 11 18:01:44 2015 Alexandre Blanchard
-## Last update Wed Dec 16 14:09:07 2015 Alexandre Blanchard
+## Last update Fri Dec 18 12:01:45 2015 Alexandre Blanchard
 ##
 
 SRC=	my_putchar.c\
@@ -15,7 +15,8 @@ SRC=	my_putchar.c\
 	flag1.c\
 	flag2.c\
 	flag3.c\
-	printf.c
+	printf.c\
+	my_getnbr.c
 
 OBJ=	$(SRC:.c=.o)
 

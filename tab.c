@@ -5,7 +5,7 @@
 ** Login   <blanch_p@epitech.net>
 ** 
 ** Started on  Wed Dec 16 11:43:49 2015 Alexandre Blanchard
-** Last update Wed Dec 16 14:30:53 2015 Alexandre Blanchard
+** Last update Fri Dec 18 12:15:11 2015 Alexandre Blanchard
 */
 
 #include <stdlib.h>
@@ -17,10 +17,10 @@ char	**all_in_tab(char **tab, int nb_line, int nb_col, char *file)
 {
   int	i;
   int	j;
-  char	buffer[4096];
+  char	buffer[nb_line * nb_col];
   int	k;
 
-  read(open(file, O_RDONLY), buffer, 4096);
+  read(open(file, O_RDONLY), buffer, nb_line * nb_col);
   i = 0;
   j = 0;
   k = jump(buffer);

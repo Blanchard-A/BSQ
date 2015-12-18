@@ -5,7 +5,7 @@
 ** Login   <blanch_p@epitech.net>
 ** 
 ** Started on  Wed Dec 16 11:08:35 2015 Alexandre Blanchard
-** Last update Wed Dec 16 14:17:02 2015 Alexandre Blanchard
+** Last update Fri Dec 18 15:24:26 2015 Alexandre Blanchard
 */
 
 #include <stdlib.h>
@@ -38,11 +38,12 @@ int	make(int ac, char **av)
   int	mem_j;
 
   nb_col = nb_colonne(av[1], 0, 0);
-  nb_line = nb_ligne(av[1], 0, 0);
+  nb_line = nb_ligne(av[1]);
   tab = malloc_tab(nb_col, nb_line);
   all_in_tab(tab, nb_line, nb_col, av[1]);
   one_or_zero(tab);
   replace_number(tab, nb_col);
+  show_double_tab(tab);
   mem = check_bigger(tab, av, nb_col);
   mem_i = check_i(tab, mem, av, nb_col);
   mem_j = check_j(tab, mem, av, nb_col);
