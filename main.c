@@ -5,7 +5,7 @@
 ** Login   <blanch_p@epitech.net>
 ** 
 ** Started on  Wed Dec 16 11:08:35 2015 Alexandre Blanchard
-** Last update Fri Dec 18 15:24:26 2015 Alexandre Blanchard
+** Last update Sat Dec 19 19:43:27 2015 Alexandre Blanchard
 */
 
 #include <stdlib.h>
@@ -43,7 +43,6 @@ int	make(int ac, char **av)
   all_in_tab(tab, nb_line, nb_col, av[1]);
   one_or_zero(tab);
   replace_number(tab, nb_col);
-  show_double_tab(tab);
   mem = check_bigger(tab, av, nb_col);
   mem_i = check_i(tab, mem, av, nb_col);
   mem_j = check_j(tab, mem, av, nb_col);
