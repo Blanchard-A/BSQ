@@ -5,18 +5,17 @@
 ## Login   <blanch_p@epitech.net>
 ## 
 ## Started on  Sun Dec  6 16:56:26 2015 Alexandre Blanchard
-## Last update Wed Dec 16 14:13:01 2015 Alexandre Blanchard
+## Last update Tue Jun  7 15:20:48 2016 Alexandre Blanchard
 ##
 
 NAME1		=	bsq
 
-SRC1		=	main.c \
-			check.c \
-			change.c \
-			count.c \
-			tab.c \
-			replace.c \
-
+SRC1		=	src/main.c \
+			src/check.c \
+			src/change.c \
+			src/count.c \
+			src/tab.c \
+			src/replace.c \
 
 OBJ1		=	$(SRC1:.c=.o)
 
